@@ -13,7 +13,7 @@
 #include "serial/serial.h"
 
 #include "ros/ros.h"
-#include "QuadroController/channel_values.h"
+#include "RCcontroller/channel_values.h"
 
 // Define the baudrate here
 #define baudrate 57600
@@ -66,7 +66,7 @@ uint8_t calculate_checksum(const uint8_t* data, uint8_t size)
 
 // Sends the given channel values with it's checksum to
 // the rc-controller
-void send_to_controller( const QuadroController::channel_values::ConstPtr& msg)
+void send_to_controller( const RCcontroller::channel_values::ConstPtr& msg)
 {
   send_data[0] = 0x00;
   send_data[1] = 0x01;

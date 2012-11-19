@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johanv/ros_workspace_final/RCcontroller
+CMAKE_SOURCE_DIR = /home/johanv/code/vertensj-quadrotor/RCcontroller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johanv/ros_workspace_final/RCcontroller/build
+CMAKE_BINARY_DIR = /home/johanv/code/vertensj-quadrotor/RCcontroller/build
 
 # Utility rule file for ROSBUILD_genmsg_cpp.
 
@@ -49,10 +49,22 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/RCcontroller/channel_valu
 ../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
 ../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/RCcontroller/waypoint.h: /home/johanv/ros_workspace_final/serial/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles $(CMAKE_PROGRESS_1)
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /home/johanv/code/vertensj-quadrotor/serial/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/RCcontroller/waypoint.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/RCcontroller/waypoint.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/johanv/ros_workspace_final/RCcontroller/msg/waypoint.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/johanv/code/vertensj-quadrotor/RCcontroller/msg/waypoint.msg
 
 ../msg_gen/cpp/include/RCcontroller/channel_values.h: ../msg/channel_values.msg
 ../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
@@ -61,10 +73,22 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/RCcontroller/channel_valu
 ../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
 ../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/RCcontroller/channel_values.h: /home/johanv/ros_workspace_final/serial/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles $(CMAKE_PROGRESS_2)
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /home/johanv/code/vertensj-quadrotor/serial/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/RCcontroller/channel_values.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/RCcontroller/channel_values.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/johanv/ros_workspace_final/RCcontroller/msg/channel_values.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/johanv/code/vertensj-quadrotor/RCcontroller/msg/channel_values.msg
 
 ROSBUILD_genmsg_cpp: CMakeFiles/ROSBUILD_genmsg_cpp
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/RCcontroller/waypoint.h
@@ -81,6 +105,6 @@ CMakeFiles/ROSBUILD_genmsg_cpp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_cpp.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_cpp.dir/depend:
-	cd /home/johanv/ros_workspace_final/RCcontroller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/ros_workspace_final/RCcontroller /home/johanv/ros_workspace_final/RCcontroller /home/johanv/ros_workspace_final/RCcontroller/build /home/johanv/ros_workspace_final/RCcontroller/build /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johanv/code/vertensj-quadrotor/RCcontroller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/code/vertensj-quadrotor/RCcontroller /home/johanv/code/vertensj-quadrotor/RCcontroller /home/johanv/code/vertensj-quadrotor/RCcontroller/build /home/johanv/code/vertensj-quadrotor/RCcontroller/build /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_cpp.dir/depend
 

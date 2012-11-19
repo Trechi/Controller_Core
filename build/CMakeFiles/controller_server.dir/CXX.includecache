@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../msg_gen/cpp/include/QuadroController/channel_values.h
+../msg_gen/cpp/include/RCcontroller/channel_values.h
 string
 -
 vector
@@ -16,19 +16,19 @@ map
 ostream
 -
 ros/serialization.h
-../msg_gen/cpp/include/QuadroController/ros/serialization.h
+../msg_gen/cpp/include/RCcontroller/ros/serialization.h
 ros/builtin_message_traits.h
-../msg_gen/cpp/include/QuadroController/ros/builtin_message_traits.h
+../msg_gen/cpp/include/RCcontroller/ros/builtin_message_traits.h
 ros/message_operations.h
-../msg_gen/cpp/include/QuadroController/ros/message_operations.h
+../msg_gen/cpp/include/RCcontroller/ros/message_operations.h
 ros/time.h
-../msg_gen/cpp/include/QuadroController/ros/time.h
+../msg_gen/cpp/include/RCcontroller/ros/time.h
 ros/macros.h
-../msg_gen/cpp/include/QuadroController/ros/macros.h
+../msg_gen/cpp/include/RCcontroller/ros/macros.h
 ros/assert.h
-../msg_gen/cpp/include/QuadroController/ros/assert.h
+../msg_gen/cpp/include/RCcontroller/ros/assert.h
 
-/home/johanv/ros_workspace_final/RCcontroller/src/controller_server.cpp
+/home/johanv/code/vertensj-quadrotor/RCcontroller/src/controller_server.cpp
 string
 -
 iostream
@@ -40,13 +40,13 @@ windows.h
 unistd.h
 -
 serial/serial.h
-/home/johanv/ros_workspace_final/RCcontroller/src/serial/serial.h
+/home/johanv/code/vertensj-quadrotor/RCcontroller/src/serial/serial.h
 ros/ros.h
-/home/johanv/ros_workspace_final/RCcontroller/src/ros/ros.h
-QuadroController/channel_values.h
-/home/johanv/ros_workspace_final/RCcontroller/src/QuadroController/channel_values.h
+/home/johanv/code/vertensj-quadrotor/RCcontroller/src/ros/ros.h
+RCcontroller/channel_values.h
+/home/johanv/code/vertensj-quadrotor/RCcontroller/src/RCcontroller/channel_values.h
 
-/home/johanv/ros_workspace_final/serial/include/serial/serial.h
+/home/johanv/code/vertensj-quadrotor/serial/include/serial/serial.h
 limits
 -
 vector
@@ -64,7 +64,7 @@ stdexcept
 serial/v8stdint.h
 -
 
-/home/johanv/ros_workspace_final/serial/include/serial/v8stdint.h
+/home/johanv/code/vertensj-quadrotor/serial/include/serial/v8stdint.h
 stddef.h
 -
 stdio.h

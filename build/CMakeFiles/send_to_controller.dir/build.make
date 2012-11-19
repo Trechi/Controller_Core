@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johanv/ros_workspace_final/RCcontroller
+CMAKE_SOURCE_DIR = /home/johanv/code/vertensj-quadrotor/RCcontroller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johanv/ros_workspace_final/RCcontroller/build
+CMAKE_BINARY_DIR = /home/johanv/code/vertensj-quadrotor/RCcontroller/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/send_to_controller.dir/depend.make
@@ -52,18 +52,30 @@ CMakeFiles/send_to_controller.dir/src/send_to_controller.o: ../manifest.xml
 CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
 CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/roslang/manifest.xml
 CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/roscpp/manifest.xml
-CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /home/johanv/ros_workspace_final/serial/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /home/johanv/code/vertensj-quadrotor/serial/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/send_to_controller.dir/src/send_to_controller.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/send_to_controller.dir/src/send_to_controller.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/send_to_controller.dir/src/send_to_controller.o -c /home/johanv/ros_workspace_final/RCcontroller/src/send_to_controller.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/send_to_controller.dir/src/send_to_controller.o -c /home/johanv/code/vertensj-quadrotor/RCcontroller/src/send_to_controller.cpp
 
 CMakeFiles/send_to_controller.dir/src/send_to_controller.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/send_to_controller.dir/src/send_to_controller.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/johanv/ros_workspace_final/RCcontroller/src/send_to_controller.cpp > CMakeFiles/send_to_controller.dir/src/send_to_controller.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/johanv/code/vertensj-quadrotor/RCcontroller/src/send_to_controller.cpp > CMakeFiles/send_to_controller.dir/src/send_to_controller.i
 
 CMakeFiles/send_to_controller.dir/src/send_to_controller.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/send_to_controller.dir/src/send_to_controller.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/johanv/ros_workspace_final/RCcontroller/src/send_to_controller.cpp -o CMakeFiles/send_to_controller.dir/src/send_to_controller.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/johanv/code/vertensj-quadrotor/RCcontroller/src/send_to_controller.cpp -o CMakeFiles/send_to_controller.dir/src/send_to_controller.s
 
 CMakeFiles/send_to_controller.dir/src/send_to_controller.o.requires:
 .PHONY : CMakeFiles/send_to_controller.dir/src/send_to_controller.o.requires
@@ -99,6 +111,6 @@ CMakeFiles/send_to_controller.dir/clean:
 .PHONY : CMakeFiles/send_to_controller.dir/clean
 
 CMakeFiles/send_to_controller.dir/depend:
-	cd /home/johanv/ros_workspace_final/RCcontroller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/ros_workspace_final/RCcontroller /home/johanv/ros_workspace_final/RCcontroller /home/johanv/ros_workspace_final/RCcontroller/build /home/johanv/ros_workspace_final/RCcontroller/build /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles/send_to_controller.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johanv/code/vertensj-quadrotor/RCcontroller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/code/vertensj-quadrotor/RCcontroller /home/johanv/code/vertensj-quadrotor/RCcontroller /home/johanv/code/vertensj-quadrotor/RCcontroller/build /home/johanv/code/vertensj-quadrotor/RCcontroller/build /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles/send_to_controller.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/send_to_controller.dir/depend
 

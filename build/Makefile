@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johanv/ros_workspace_final/RCcontroller
+CMAKE_SOURCE_DIR = /home/johanv/code/vertensj-quadrotor/RCcontroller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johanv/ros_workspace_final/RCcontroller/build
+CMAKE_BINARY_DIR = /home/johanv/code/vertensj-quadrotor/RCcontroller/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -185,6 +185,19 @@ controller_core: cmake_check_build_system
 controller_core/fast:
 	$(MAKE) -f CMakeFiles/controller_core.dir/build.make CMakeFiles/controller_core.dir/build
 .PHONY : controller_core/fast
+
+#=============================================================================
+# Target rules for targets named controller_server
+
+# Build rule for target.
+controller_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_server
+.PHONY : controller_server
+
+# fast build rule for target.
+controller_server/fast:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/build
+.PHONY : controller_server/fast
 
 #=============================================================================
 # Target rules for targets named rosbuild_precompile
@@ -358,6 +371,21 @@ src/controller_core.s:
 .PHONY : src/controller_core.s
 
 # target to build an object file
+src/controller_server.o:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.o
+.PHONY : src/controller_server.o
+
+# target to preprocess a source file
+src/controller_server.i:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.i
+.PHONY : src/controller_server.i
+
+# target to generate assembly for a file
+src/controller_server.s:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.s
+.PHONY : src/controller_server.s
+
+# target to build an object file
 src/pid.o:
 	$(MAKE) -f CMakeFiles/controller_core.dir/build.make CMakeFiles/controller_core.dir/src/pid.o
 .PHONY : src/pid.o
@@ -400,6 +428,7 @@ help:
 	@echo "... ROSBUILD_gensrv_lisp"
 	@echo "... clean-test-results"
 	@echo "... controller_core"
+	@echo "... controller_server"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rosbuild_precompile"
@@ -417,6 +446,9 @@ help:
 	@echo "... src/controller_core.o"
 	@echo "... src/controller_core.i"
 	@echo "... src/controller_core.s"
+	@echo "... src/controller_server.o"
+	@echo "... src/controller_server.i"
+	@echo "... src/controller_server.s"
 	@echo "... src/pid.o"
 	@echo "... src/pid.i"
 	@echo "... src/pid.s"

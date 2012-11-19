@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johanv/ros_workspace_final/RCcontroller
+CMAKE_SOURCE_DIR = /home/johanv/code/vertensj-quadrotor/RCcontroller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johanv/ros_workspace_final/RCcontroller/build
+CMAKE_BINARY_DIR = /home/johanv/code/vertensj-quadrotor/RCcontroller/build
 
 # Utility rule file for tests.
 
@@ -54,6 +54,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/johanv/ros_workspace_final/RCcontroller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/ros_workspace_final/RCcontroller /home/johanv/ros_workspace_final/RCcontroller /home/johanv/ros_workspace_final/RCcontroller/build /home/johanv/ros_workspace_final/RCcontroller/build /home/johanv/ros_workspace_final/RCcontroller/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johanv/code/vertensj-quadrotor/RCcontroller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/code/vertensj-quadrotor/RCcontroller /home/johanv/code/vertensj-quadrotor/RCcontroller /home/johanv/code/vertensj-quadrotor/RCcontroller/build /home/johanv/code/vertensj-quadrotor/RCcontroller/build /home/johanv/code/vertensj-quadrotor/RCcontroller/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

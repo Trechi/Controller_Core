@@ -22,7 +22,7 @@ void set_D(float D);
 //Set maxmimum and minimum outputs
 void set_ranges(float max, float min);
 // Calculate next action
-float process(float position, float setpoint, float time); 
+float process(float position,const float setpoint,const float time);
 
 private:
 float P_coeff,I_coeff,D_coeff;

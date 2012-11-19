@@ -7,6 +7,8 @@
 #include "pid.h"
 #include <ros/ros.h>
 
+#define INTEGRAL_FILTER 0
+
 PID::PID()
 {
   P_coeff = 0;
@@ -39,9 +41,8 @@ void PID::set_ranges(float max, float min)
   min_output_value = min;
 }
 
-float PID::process(float position, float setpoint, float time)
+float PID::process(float position, const float setpoint,const float time)
 {
-  ROS_INFO("TEST");
   float error = 0;
   float output = 0;
   float derivative = 0;
