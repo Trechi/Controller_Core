@@ -1,10 +1,10 @@
 FILE(REMOVE_RECURSE
   "../msg_gen"
-  "../src/RCcontroller/msg"
   "../msg_gen"
+  "../src/Controller_Core/msg"
   "CMakeFiles/ROSBUILD_genmsg_cpp"
-  "../msg_gen/cpp/include/RCcontroller/waypoint.h"
-  "../msg_gen/cpp/include/RCcontroller/channel_values.h"
+  "../msg_gen/cpp/include/Controller_Core/channel_values.h"
+  "../msg_gen/cpp/include/Controller_Core/waypoint.h"
 )
 
 # Per-language clean rules from dependency scanning.

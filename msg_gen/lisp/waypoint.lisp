@@ -1,7 +1,7 @@
 ; Auto-generated. Do not edit!
 
 
-(cl:in-package RCcontroller-msg)
+(cl:in-package Controller_Core-msg)
 
 
 ;//! \htmlinclude waypoint.msg.html
@@ -16,7 +16,7 @@
 (cl:defmethod cl:initialize-instance :after ((m <waypoint>) cl:&rest args)
   (cl:declare (cl:ignorable args))
   (cl:unless (cl:typep m 'waypoint)
-    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name RCcontroller-msg:<waypoint> is deprecated: use RCcontroller-msg:waypoint instead.")))
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name Controller_Core-msg:<waypoint> is deprecated: use Controller_Core-msg:waypoint instead.")))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <waypoint>) ostream)
   "Serializes a message object of type '<waypoint>"
 )
@@ -26,10 +26,10 @@
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<waypoint>)))
   "Returns string type for a message object of type '<waypoint>"
-  "RCcontroller/waypoint")
+  "Controller_Core/waypoint")
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'waypoint)))
   "Returns string type for a message object of type 'waypoint"
-  "RCcontroller/waypoint")
+  "Controller_Core/waypoint")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<waypoint>)))
   "Returns md5sum for a message object of type '<waypoint>"
   "d41d8cd98f00b204e9800998ecf8427e")

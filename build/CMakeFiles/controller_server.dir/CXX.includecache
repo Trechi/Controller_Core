@@ -6,29 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../msg_gen/cpp/include/RCcontroller/channel_values.h
-string
--
-vector
--
-map
--
-ostream
--
-ros/serialization.h
-../msg_gen/cpp/include/RCcontroller/ros/serialization.h
-ros/builtin_message_traits.h
-../msg_gen/cpp/include/RCcontroller/ros/builtin_message_traits.h
-ros/message_operations.h
-../msg_gen/cpp/include/RCcontroller/ros/message_operations.h
-ros/time.h
-../msg_gen/cpp/include/RCcontroller/ros/time.h
-ros/macros.h
-../msg_gen/cpp/include/RCcontroller/ros/macros.h
-ros/assert.h
-../msg_gen/cpp/include/RCcontroller/ros/assert.h
-
-/home/johanv/code/vertensj-quadrotor/RCcontroller/src/controller_server.cpp
+/home/johan/workspace/Controller_Core/src/controller_server.cpp
 string
 -
 iostream
@@ -40,13 +18,13 @@ windows.h
 unistd.h
 -
 serial/serial.h
-/home/johanv/code/vertensj-quadrotor/RCcontroller/src/serial/serial.h
+/home/johan/workspace/Controller_Core/src/serial/serial.h
 ros/ros.h
-/home/johanv/code/vertensj-quadrotor/RCcontroller/src/ros/ros.h
+/home/johan/workspace/Controller_Core/src/ros/ros.h
 RCcontroller/channel_values.h
-/home/johanv/code/vertensj-quadrotor/RCcontroller/src/RCcontroller/channel_values.h
+/home/johan/workspace/Controller_Core/src/RCcontroller/channel_values.h
 
-/home/johanv/code/vertensj-quadrotor/serial/include/serial/serial.h
+/home/johan/workspace/serial/serial/include/serial/serial.h
 limits
 -
 vector
@@ -64,7 +42,7 @@ stdexcept
 serial/v8stdint.h
 -
 
-/home/johanv/code/vertensj-quadrotor/serial/include/serial/v8stdint.h
+/home/johan/workspace/serial/serial/include/serial/v8stdint.h
 stddef.h
 -
 stdio.h
@@ -267,10 +245,6 @@ boost/make_shared.hpp
 -
 
 /opt/ros/fuerte/include/ros/message_forward.h
-
-/opt/ros/fuerte/include/ros/message_operations.h
-ostream
--
 
 /opt/ros/fuerte/include/ros/message_traits.h
 message_forward.h
