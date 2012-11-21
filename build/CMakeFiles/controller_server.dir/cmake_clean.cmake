@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "../msg_gen"
-  "../msg_gen"
   "../src/Controller_Core/msg"
+  "../msg_gen"
   "CMakeFiles/controller_server.dir/src/controller_server.o"
   "../bin/controller_server.pdb"
   "../bin/controller_server"

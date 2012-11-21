@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johan/workspace/Controller_Core
+CMAKE_SOURCE_DIR = /home/johanv/code/vertensj-quadrotor/Controller_Core
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johan/workspace/Controller_Core/build
+CMAKE_BINARY_DIR = /home/johanv/code/vertensj-quadrotor/Controller_Core/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/controller_server.dir/depend.make
@@ -52,7 +52,7 @@ CMakeFiles/controller_server.dir/src/controller_server.o: ../manifest.xml
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/share/roslang/manifest.xml
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/share/roscpp/manifest.xml
-CMakeFiles/controller_server.dir/src/controller_server.o: /home/johan/workspace/serial/serial/manifest.xml
+CMakeFiles/controller_server.dir/src/controller_server.o: /home/johanv/code/vertensj-quadrotor/serial/manifest.xml
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
@@ -65,17 +65,17 @@ CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/share/
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
 CMakeFiles/controller_server.dir/src/controller_server.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/johan/workspace/Controller_Core/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/controller_server.dir/src/controller_server.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/controller_server.dir/src/controller_server.o -c /home/johan/workspace/Controller_Core/src/controller_server.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/controller_server.dir/src/controller_server.o -c /home/johanv/code/vertensj-quadrotor/Controller_Core/src/controller_server.cpp
 
 CMakeFiles/controller_server.dir/src/controller_server.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/controller_server.dir/src/controller_server.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/johan/workspace/Controller_Core/src/controller_server.cpp > CMakeFiles/controller_server.dir/src/controller_server.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/johanv/code/vertensj-quadrotor/Controller_Core/src/controller_server.cpp > CMakeFiles/controller_server.dir/src/controller_server.i
 
 CMakeFiles/controller_server.dir/src/controller_server.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/controller_server.dir/src/controller_server.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/johan/workspace/Controller_Core/src/controller_server.cpp -o CMakeFiles/controller_server.dir/src/controller_server.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/johanv/code/vertensj-quadrotor/Controller_Core/src/controller_server.cpp -o CMakeFiles/controller_server.dir/src/controller_server.s
 
 CMakeFiles/controller_server.dir/src/controller_server.o.requires:
 .PHONY : CMakeFiles/controller_server.dir/src/controller_server.o.requires
@@ -111,6 +111,6 @@ CMakeFiles/controller_server.dir/clean:
 .PHONY : CMakeFiles/controller_server.dir/clean
 
 CMakeFiles/controller_server.dir/depend:
-	cd /home/johan/workspace/Controller_Core/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johan/workspace/Controller_Core /home/johan/workspace/Controller_Core /home/johan/workspace/Controller_Core/build /home/johan/workspace/Controller_Core/build /home/johan/workspace/Controller_Core/build/CMakeFiles/controller_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johanv/code/vertensj-quadrotor/Controller_Core/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/code/vertensj-quadrotor/Controller_Core /home/johanv/code/vertensj-quadrotor/Controller_Core /home/johanv/code/vertensj-quadrotor/Controller_Core/build /home/johanv/code/vertensj-quadrotor/Controller_Core/build /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles/controller_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/controller_server.dir/depend
 

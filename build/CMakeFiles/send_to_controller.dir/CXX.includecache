@@ -6,11 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/johan/workspace/Controller_Core/src/send_to_controller.cpp
+../msg_gen/cpp/include/Controller_Core/channel_values.h
+string
+-
+vector
+-
+map
+-
+ostream
+-
+ros/serialization.h
+../msg_gen/cpp/include/Controller_Core/ros/serialization.h
+ros/builtin_message_traits.h
+../msg_gen/cpp/include/Controller_Core/ros/builtin_message_traits.h
+ros/message_operations.h
+../msg_gen/cpp/include/Controller_Core/ros/message_operations.h
+ros/time.h
+../msg_gen/cpp/include/Controller_Core/ros/time.h
+ros/macros.h
+../msg_gen/cpp/include/Controller_Core/ros/macros.h
+ros/assert.h
+../msg_gen/cpp/include/Controller_Core/ros/assert.h
+
+/home/johanv/code/vertensj-quadrotor/Controller_Core/src/send_to_controller.cpp
 ros/ros.h
-/home/johan/workspace/Controller_Core/src/ros/ros.h
-RCcontroller/channel_values.h
-/home/johan/workspace/Controller_Core/src/RCcontroller/channel_values.h
+/home/johanv/code/vertensj-quadrotor/Controller_Core/src/ros/ros.h
+Controller_Core/channel_values.h
+/home/johanv/code/vertensj-quadrotor/Controller_Core/src/Controller_Core/channel_values.h
 sstream
 -
 
@@ -209,6 +231,10 @@ boost/make_shared.hpp
 -
 
 /opt/ros/fuerte/include/ros/message_forward.h
+
+/opt/ros/fuerte/include/ros/message_operations.h
+ostream
+-
 
 /opt/ros/fuerte/include/ros/message_traits.h
 message_forward.h

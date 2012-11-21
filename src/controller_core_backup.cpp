@@ -1,9 +1,10 @@
 #include "ros/ros.h"
 #include "Controller_Core/channel_values.h"
-#include <RCcontroller/pid.h>
+//#include "Controller_Core/pid.h"
+#include <pid.h>
 #include <tf/transform_listener.h>
-
-ros::Publisher chatter_pub;
+#include "tf/message_filter.h"
+#include "message_filters/subscriber.h"
 
 #include <sstream>
 
@@ -17,32 +18,51 @@ ros::Publisher chatter_pub;
   PID pid_position_y;
   PID pid_position_z;
 
+class PoseDrawer
+  {
+  public:
+    PoseDrawer() : tf_(),  target_frame_("/mocap")
+    {
+      transform_sub_.subscribe(n_, "/tf/tfMessage/", 10);
+      tf_filter_ = new tf::MessageFilter<geometry_msgs::TransformStamped>(transform_sub_, tf_, target_frame_, 10);
+      tf_filter_->registerCallback( boost::bind(&PoseDrawer::control_task, this, _1) );
+    } ;
+  private:
+    message_filters::Subscriber<geometry_msgs::TransformStamped> transform_sub_;
+    tf::TransformListener tf_;
+    tf::MessageFilter<geometry_msgs::TransformStamped> * tf_filter_;
+    ros::NodeHandle n_;
+    std::string target_frame_;
 
-void control_task(const tf::tfMessageConstPtr& tf_msg)
+void control_task(const boost::shared_ptr<const geometry_msgs::TransformStamped>& point_ptr)
 {
+
 	static int count = 0;
 	static float x,y,z,x_rot,y_rot,z_rot = 0;
 	float setpoint_roll,setpoint_pitch,setpoint_yaw,setpoint_x,setpoint_y,setpoint_z = 0;
 	ros::Time time_between_pid;
-	static tf::TransformListener listener;
-	tf::StampedTransform transform;
+
+	static  tf::StampedTransform transform;
 	// RECIEVE THE COORDINATES FROM MOCAP HERE
 	    try{
-			listener.lookupTransform("/mocap", "/map",
-											 ros::Time(0), transform);
-			//ROS_INFO("JETZT");
+	    	//tf::transformStampedMsgToTF(*point_ptr,transform);
+			//tf_.lookupTransform("/mocap", "/map",
+				//							 ros::Time(0), transform);
+	    	 //tf_.transformPoint(target_frame_, *point_ptr, transform);
+	    	ROS_INFO("JETZT");
 		  }
 		  catch (tf::TransformException ex){
 		      	ROS_ERROR("%s",ex.what());
 		  }
 
+		  /*
 		x = transform.getOrigin().x();
 		y = transform.getOrigin().y();
 		z = transform.getOrigin().z();
 		x_rot = transform.getRotation().x();
 		y_rot = transform.getRotation().y();
 		z_rot = transform.getRotation().z();
-	    ROS_INFO("GOT BODY: %f %f %f Rot: %f %f %f",x,y,z,x_rot,y_rot,z_rot);
+	    //ROS_INFO("GOT BODY: %f %f %f Rot: %f %f %f",x,y,z,x_rot,y_rot,z_rot);
 
 	    // UPDATE PID'S HERE
 	    pid_position_x.process(x,setpoint_x,1.0);
@@ -64,16 +84,21 @@ void control_task(const tf::tfMessageConstPtr& tf_msg)
 	    msg.channel_7 = count;
 
 	    // Publish the msg to the RC-Controller
-	    chatter_pub.publish(msg);
-}
+	    //chatter_pub.publish(msg);
+	    //ros::spinOnce();
+//	    loop_rate.sleep();
+	    count++;
+	    if (count >100) count = 0;
+	    */
+	};
+};
 
 int main(int argc, char **argv)
 {
   ros::init(argc, argv, "controller_core");
-
-  ros::NodeHandle n;
-  chatter_pub = n.advertise<Controller_Core::channel_values>("Channel_Information", 1000);
-  ros::Subscriber sub = n.subscribe<tf::tfMessage>("/tf", 100, control_task);
+  ROS_INFO("Core is running now");
+  //ros::Publisher chatter_pub = n.advertise<Controller_Core::channel_values>("Channel_Information", 1000);
+  PoseDrawer pd;
   ros::spin();
   return 0;
 }
