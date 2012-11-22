@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,73 +32,76 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johanv/code/vertensj-quadrotor/Controller_Core
+CMAKE_SOURCE_DIR = /home/johan/workspace/Controller_Core2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johanv/code/vertensj-quadrotor/Controller_Core/build
+CMAKE_BINARY_DIR = /home/johan/workspace/Controller_Core2/build
 
 # Utility rule file for ROSBUILD_genmsg_py.
 
-CMakeFiles/ROSBUILD_genmsg_py: ../src/Controller_Core/msg/__init__.py
+# Include the progress variables for this target.
+include CMakeFiles/ROSBUILD_genmsg_py.dir/progress.make
 
-../src/Controller_Core/msg/__init__.py: ../src/Controller_Core/msg/_waypoint.py
-../src/Controller_Core/msg/__init__.py: ../src/Controller_Core/msg/_channel_values.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/Controller_Core/msg/__init__.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/johanv/code/vertensj-quadrotor/Controller_Core/msg/waypoint.msg /home/johanv/code/vertensj-quadrotor/Controller_Core/msg/channel_values.msg
+CMakeFiles/ROSBUILD_genmsg_py: ../src/Controller_Core2/msg/__init__.py
 
-../src/Controller_Core/msg/_waypoint.py: ../msg/waypoint.msg
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/Controller_Core/msg/_waypoint.py: ../manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /home/johanv/code/vertensj-quadrotor/serial/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/rospy/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/rostest/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/roswtf/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/share/message_filters/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
-../src/Controller_Core/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/Controller_Core/msg/_waypoint.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/johanv/code/vertensj-quadrotor/Controller_Core/msg/waypoint.msg
+../src/Controller_Core2/msg/__init__.py: ../src/Controller_Core2/msg/_channel_values.py
+../src/Controller_Core2/msg/__init__.py: ../src/Controller_Core2/msg/_waypoint.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/johan/workspace/Controller_Core2/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/Controller_Core2/msg/__init__.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/johan/workspace/Controller_Core2/msg/channel_values.msg /home/johan/workspace/Controller_Core2/msg/waypoint.msg
 
-../src/Controller_Core/msg/_channel_values.py: ../msg/channel_values.msg
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/Controller_Core/msg/_channel_values.py: ../manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /home/johanv/code/vertensj-quadrotor/serial/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/rospy/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/rostest/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/roswtf/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/share/message_filters/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
-../src/Controller_Core/msg/_channel_values.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/Controller_Core/msg/_channel_values.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/johanv/code/vertensj-quadrotor/Controller_Core/msg/channel_values.msg
+../src/Controller_Core2/msg/_channel_values.py: ../msg/channel_values.msg
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/Controller_Core2/msg/_channel_values.py: ../manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /home/johan/workspace/serial/serial/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/Controller_Core2/msg/_channel_values.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/johan/workspace/Controller_Core2/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/Controller_Core2/msg/_channel_values.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/johan/workspace/Controller_Core2/msg/channel_values.msg
+
+../src/Controller_Core2/msg/_waypoint.py: ../msg/waypoint.msg
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/Controller_Core2/msg/_waypoint.py: ../manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /home/johan/workspace/serial/serial/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/Controller_Core2/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/johan/workspace/Controller_Core2/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/Controller_Core2/msg/_waypoint.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/johan/workspace/Controller_Core2/msg/waypoint.msg
 
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py
-ROSBUILD_genmsg_py: ../src/Controller_Core/msg/__init__.py
-ROSBUILD_genmsg_py: ../src/Controller_Core/msg/_waypoint.py
-ROSBUILD_genmsg_py: ../src/Controller_Core/msg/_channel_values.py
+ROSBUILD_genmsg_py: ../src/Controller_Core2/msg/__init__.py
+ROSBUILD_genmsg_py: ../src/Controller_Core2/msg/_channel_values.py
+ROSBUILD_genmsg_py: ../src/Controller_Core2/msg/_waypoint.py
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py.dir/build.make
 .PHONY : ROSBUILD_genmsg_py
 
@@ -111,6 +114,6 @@ CMakeFiles/ROSBUILD_genmsg_py.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_py.dir/depend:
-	cd /home/johanv/code/vertensj-quadrotor/Controller_Core/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/code/vertensj-quadrotor/Controller_Core /home/johanv/code/vertensj-quadrotor/Controller_Core /home/johanv/code/vertensj-quadrotor/Controller_Core/build /home/johanv/code/vertensj-quadrotor/Controller_Core/build /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johan/workspace/Controller_Core2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johan/workspace/Controller_Core2 /home/johan/workspace/Controller_Core2 /home/johan/workspace/Controller_Core2/build /home/johan/workspace/Controller_Core2/build /home/johan/workspace/Controller_Core2/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/depend
 

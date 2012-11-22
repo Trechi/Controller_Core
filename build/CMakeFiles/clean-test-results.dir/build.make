@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,15 +32,18 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johanv/code/vertensj-quadrotor/Controller_Core
+CMAKE_SOURCE_DIR = /home/johan/workspace/Controller_Core2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johanv/code/vertensj-quadrotor/Controller_Core/build
+CMAKE_BINARY_DIR = /home/johan/workspace/Controller_Core2/build
 
 # Utility rule file for clean-test-results.
 
+# Include the progress variables for this target.
+include CMakeFiles/clean-test-results.dir/progress.make
+
 CMakeFiles/clean-test-results:
-	if ! rm -rf /home/johanv/.ros/test_results/Controller_Core; then echo WARNING:\ failed\ to\ remove\ test-results\ directory ; fi
+	if ! rm -rf /home/johan/.ros/test_results/Controller_Core2; then echo WARNING:\ failed\ to\ remove\ test-results\ directory ; fi
 
 clean-test-results: CMakeFiles/clean-test-results
 clean-test-results: CMakeFiles/clean-test-results.dir/build.make
@@ -55,6 +58,6 @@ CMakeFiles/clean-test-results.dir/clean:
 .PHONY : CMakeFiles/clean-test-results.dir/clean
 
 CMakeFiles/clean-test-results.dir/depend:
-	cd /home/johanv/code/vertensj-quadrotor/Controller_Core/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johanv/code/vertensj-quadrotor/Controller_Core /home/johanv/code/vertensj-quadrotor/Controller_Core /home/johanv/code/vertensj-quadrotor/Controller_Core/build /home/johanv/code/vertensj-quadrotor/Controller_Core/build /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles/clean-test-results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johan/workspace/Controller_Core2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johan/workspace/Controller_Core2 /home/johan/workspace/Controller_Core2 /home/johan/workspace/Controller_Core2/build /home/johan/workspace/Controller_Core2/build /home/johan/workspace/Controller_Core2/build/CMakeFiles/clean-test-results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean-test-results.dir/depend
 

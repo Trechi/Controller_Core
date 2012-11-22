@@ -1,7 +1,7 @@
 ; Auto-generated. Do not edit!
 
 
-(cl:in-package Controller_Core-msg)
+(cl:in-package Controller_Core2-msg)
 
 
 ;//! \htmlinclude channel_values.msg.html
@@ -50,41 +50,41 @@
 (cl:defmethod cl:initialize-instance :after ((m <channel_values>) cl:&rest args)
   (cl:declare (cl:ignorable args))
   (cl:unless (cl:typep m 'channel_values)
-    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name Controller_Core-msg:<channel_values> is deprecated: use Controller_Core-msg:channel_values instead.")))
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name Controller_Core2-msg:<channel_values> is deprecated: use Controller_Core2-msg:channel_values instead.")))
 
 (cl:ensure-generic-function 'channel_1-val :lambda-list '(m))
 (cl:defmethod channel_1-val ((m <channel_values>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core-msg:channel_1-val is deprecated.  Use Controller_Core-msg:channel_1 instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core2-msg:channel_1-val is deprecated.  Use Controller_Core2-msg:channel_1 instead.")
   (channel_1 m))
 
 (cl:ensure-generic-function 'channel_2-val :lambda-list '(m))
 (cl:defmethod channel_2-val ((m <channel_values>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core-msg:channel_2-val is deprecated.  Use Controller_Core-msg:channel_2 instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core2-msg:channel_2-val is deprecated.  Use Controller_Core2-msg:channel_2 instead.")
   (channel_2 m))
 
 (cl:ensure-generic-function 'channel_3-val :lambda-list '(m))
 (cl:defmethod channel_3-val ((m <channel_values>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core-msg:channel_3-val is deprecated.  Use Controller_Core-msg:channel_3 instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core2-msg:channel_3-val is deprecated.  Use Controller_Core2-msg:channel_3 instead.")
   (channel_3 m))
 
 (cl:ensure-generic-function 'channel_4-val :lambda-list '(m))
 (cl:defmethod channel_4-val ((m <channel_values>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core-msg:channel_4-val is deprecated.  Use Controller_Core-msg:channel_4 instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core2-msg:channel_4-val is deprecated.  Use Controller_Core2-msg:channel_4 instead.")
   (channel_4 m))
 
 (cl:ensure-generic-function 'channel_5-val :lambda-list '(m))
 (cl:defmethod channel_5-val ((m <channel_values>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core-msg:channel_5-val is deprecated.  Use Controller_Core-msg:channel_5 instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core2-msg:channel_5-val is deprecated.  Use Controller_Core2-msg:channel_5 instead.")
   (channel_5 m))
 
 (cl:ensure-generic-function 'channel_6-val :lambda-list '(m))
 (cl:defmethod channel_6-val ((m <channel_values>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core-msg:channel_6-val is deprecated.  Use Controller_Core-msg:channel_6 instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core2-msg:channel_6-val is deprecated.  Use Controller_Core2-msg:channel_6 instead.")
   (channel_6 m))
 
 (cl:ensure-generic-function 'channel_7-val :lambda-list '(m))
 (cl:defmethod channel_7-val ((m <channel_values>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core-msg:channel_7-val is deprecated.  Use Controller_Core-msg:channel_7 instead.")
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Controller_Core2-msg:channel_7-val is deprecated.  Use Controller_Core2-msg:channel_7 instead.")
   (channel_7 m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <channel_values>) ostream)
   "Serializes a message object of type '<channel_values>"
@@ -179,10 +179,10 @@
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<channel_values>)))
   "Returns string type for a message object of type '<channel_values>"
-  "Controller_Core/channel_values")
+  "Controller_Core2/channel_values")
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'channel_values)))
   "Returns string type for a message object of type 'channel_values"
-  "Controller_Core/channel_values")
+  "Controller_Core2/channel_values")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<channel_values>)))
   "Returns md5sum for a message object of type '<channel_values>"
   "ca7acf8e5a00666a779bed08a3dab8d4")

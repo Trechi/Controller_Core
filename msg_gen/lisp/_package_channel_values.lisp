@@ -1,4 +1,4 @@
-(cl:in-package Controller_Core-msg)
+(cl:in-package Controller_Core2-msg)
 (cl:export '(CHANNEL_1-VAL
           CHANNEL_1
           CHANNEL_2-VAL

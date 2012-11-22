@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johanv/code/vertensj-quadrotor/Controller_Core
+CMAKE_SOURCE_DIR = /home/johan/workspace/Controller_Core2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johanv/code/vertensj-quadrotor/Controller_Core/build
+CMAKE_BINARY_DIR = /home/johan/workspace/Controller_Core2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johan/workspace/Controller_Core2/build/CMakeFiles /home/johan/workspace/Controller_Core2/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johanv/code/vertensj-quadrotor/Controller_Core/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johan/workspace/Controller_Core2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -278,19 +278,6 @@ rospack_gensrv/fast:
 .PHONY : rospack_gensrv/fast
 
 #=============================================================================
-# Target rules for targets named send_to_controller
-
-# Build rule for target.
-send_to_controller: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 send_to_controller
-.PHONY : send_to_controller
-
-# fast build rule for target.
-send_to_controller/fast:
-	$(MAKE) -f CMakeFiles/send_to_controller.dir/build.make CMakeFiles/send_to_controller.dir/build
-.PHONY : send_to_controller/fast
-
-#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -371,21 +358,6 @@ src/controller_core.s:
 .PHONY : src/controller_core.s
 
 # target to build an object file
-src/controller_server.o:
-	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.o
-.PHONY : src/controller_server.o
-
-# target to preprocess a source file
-src/controller_server.i:
-	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.i
-.PHONY : src/controller_server.i
-
-# target to generate assembly for a file
-src/controller_server.s:
-	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.s
-.PHONY : src/controller_server.s
-
-# target to build an object file
 src/pid.o:
 	$(MAKE) -f CMakeFiles/controller_core.dir/build.make CMakeFiles/controller_core.dir/src/pid.o
 .PHONY : src/pid.o
@@ -401,19 +373,19 @@ src/pid.s:
 .PHONY : src/pid.s
 
 # target to build an object file
-src/send_to_controller.o:
-	$(MAKE) -f CMakeFiles/send_to_controller.dir/build.make CMakeFiles/send_to_controller.dir/src/send_to_controller.o
-.PHONY : src/send_to_controller.o
+src/waypoint_generator.o:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/waypoint_generator.o
+.PHONY : src/waypoint_generator.o
 
 # target to preprocess a source file
-src/send_to_controller.i:
-	$(MAKE) -f CMakeFiles/send_to_controller.dir/build.make CMakeFiles/send_to_controller.dir/src/send_to_controller.i
-.PHONY : src/send_to_controller.i
+src/waypoint_generator.i:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/waypoint_generator.i
+.PHONY : src/waypoint_generator.i
 
 # target to generate assembly for a file
-src/send_to_controller.s:
-	$(MAKE) -f CMakeFiles/send_to_controller.dir/build.make CMakeFiles/send_to_controller.dir/src/send_to_controller.s
-.PHONY : src/send_to_controller.s
+src/waypoint_generator.s:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/waypoint_generator.s
+.PHONY : src/waypoint_generator.s
 
 # Help Target
 help:
@@ -437,7 +409,6 @@ help:
 	@echo "... rospack_genmsg_all"
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
-	@echo "... send_to_controller"
 	@echo "... test"
 	@echo "... test-future"
 	@echo "... test-results"
@@ -446,15 +417,12 @@ help:
 	@echo "... src/controller_core.o"
 	@echo "... src/controller_core.i"
 	@echo "... src/controller_core.s"
-	@echo "... src/controller_server.o"
-	@echo "... src/controller_server.i"
-	@echo "... src/controller_server.s"
 	@echo "... src/pid.o"
 	@echo "... src/pid.i"
 	@echo "... src/pid.s"
-	@echo "... src/send_to_controller.o"
-	@echo "... src/send_to_controller.i"
-	@echo "... src/send_to_controller.s"
+	@echo "... src/waypoint_generator.o"
+	@echo "... src/waypoint_generator.i"
+	@echo "... src/waypoint_generator.s"
 .PHONY : help
 
 
