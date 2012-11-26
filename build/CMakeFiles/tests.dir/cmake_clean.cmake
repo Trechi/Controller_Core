@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "../msg_gen"
-  "../msg_gen"
   "../src/Controller_Core2/msg"
+  "../msg_gen"
   "CMakeFiles/tests"
 )
 

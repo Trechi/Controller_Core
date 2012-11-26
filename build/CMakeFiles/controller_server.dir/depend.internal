@@ -3,7 +3,7 @@
 
 CMakeFiles/controller_server.dir/src/waypoint_generator.o
  ../msg_gen/cpp/include/Controller_Core2/waypoint.h
- /home/johan/workspace/Controller_Core2/src/waypoint_generator.cpp
+ /home/johanv/code/vertensj-quadrotor/Controller_Core2/src/waypoint_generator.cpp
  /opt/ros/fuerte/include/XmlRpcDecl.h
  /opt/ros/fuerte/include/XmlRpcValue.h
  /opt/ros/fuerte/include/ros/advertise_options.h

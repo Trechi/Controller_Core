@@ -21,12 +21,14 @@ void set_I(float I);
 void set_D(float D);
 //Set maxmimum and minimum outputs
 void set_ranges(float max, float min);
+// Set integral filter
+void set_integral_filter(float filter_value);
 // Calculate next action
 float process(float position,const float setpoint,const float time);
 
 private:
 float P_coeff,I_coeff,D_coeff;
-float max_output_value,min_output_value;
+float max_output_value,min_output_value,integral_filter;
 float error_before;
 float integral;
 };

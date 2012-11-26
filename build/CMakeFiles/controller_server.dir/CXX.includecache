@@ -28,11 +28,11 @@ ros/macros.h
 ros/assert.h
 ../msg_gen/cpp/include/Controller_Core2/ros/assert.h
 
-/home/johan/workspace/Controller_Core2/src/waypoint_generator.cpp
+/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/waypoint_generator.cpp
 ros/ros.h
-/home/johan/workspace/Controller_Core2/src/ros/ros.h
+/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/ros/ros.h
 Controller_Core2/waypoint.h
-/home/johan/workspace/Controller_Core2/src/Controller_Core2/waypoint.h
+/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/Controller_Core2/waypoint.h
 sstream
 -
 

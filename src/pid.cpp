@@ -7,7 +7,6 @@
 #include "pid.h"
 #include <ros/ros.h>
 
-#define INTEGRAL_FILTER 0
 
 PID::PID()
 {
@@ -18,6 +17,7 @@ PID::PID()
   min_output_value = 0;
   error_before = 0;
   integral = 0;
+  integral_filter = 0;
 }
 
 void PID::set_P(float P)
@@ -41,6 +41,11 @@ void PID::set_ranges(float max, float min)
   min_output_value = min;
 }
 
+void PID::set_integral_filter(float filter_value)
+{
+  integral_filter = filter_value;
+}
+
 float PID::process(float position, const float setpoint,const float time)
 {
   float error = 0;
@@ -49,7 +54,7 @@ float PID::process(float position, const float setpoint,const float time)
   // Compute the error
   error = setpoint - position;
   // Compute the Integral
-  if(abs(error) > INTEGRAL_FILTER) integral += (error*time);
+  if(abs(error) > integral_filter) integral += (error*time);
   // Compute the derivative
   derivative = (error - error_before)/time;
   // Compute the output in respect to the coeffizients

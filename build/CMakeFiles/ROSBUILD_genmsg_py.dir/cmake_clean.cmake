@@ -1,11 +1,11 @@
 FILE(REMOVE_RECURSE
   "../msg_gen"
-  "../msg_gen"
   "../src/Controller_Core2/msg"
+  "../msg_gen"
   "CMakeFiles/ROSBUILD_genmsg_py"
   "../src/Controller_Core2/msg/__init__.py"
-  "../src/Controller_Core2/msg/_channel_values.py"
   "../src/Controller_Core2/msg/_waypoint.py"
+  "../src/Controller_Core2/msg/_channel_values.py"
 )
 
 # Per-language clean rules from dependency scanning.
