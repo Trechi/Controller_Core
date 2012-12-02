@@ -68,22 +68,6 @@ tf/transform_listener.h
 sstream
 -
 
-/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/pid.cpp
-stdlib.h
--
-stdio.h
--
-vector
--
-pid.h
-/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/pid.h
-ros/ros.h
--
-
-/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/pid.h
-vector
--
-
 /opt/ros/fuerte/include/XmlRpcDecl.h
 ros/macros.h
 -
