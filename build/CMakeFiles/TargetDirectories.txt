@@ -17,3 +17,4 @@
 /home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles/test-results.dir
 /home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles/test-results-run.dir
 /home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles/tests.dir
+/home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles/waypoint_generator.dir

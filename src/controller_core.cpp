@@ -38,6 +38,7 @@ double secs_old;
   PID pid_position_y;
   PID pid_position_z;
 
+  double throttle_hover;
 
 void control_task(const tf::tfMessageConstPtr& tf_msg)
 {
@@ -92,7 +93,7 @@ void control_task(const tf::tfMessageConstPtr& tf_msg)
 	    // Position Control----------------------------------------------------------------------
 	    setpoint_roll_velocity = pid_position_x.process(x,setpoint_x,time_duration);
 	    setpoint_pitch_velocity = pid_position_y.process(y,setpoint_y,time_duration);
-		msg.channel_4 = pid_position_z.process(z,setpoint_z,time_duration);
+		msg.channel_4 = pid_position_z.process(z,setpoint_z,time_duration) + throttle_hover;
 
 		// Velocity Control----------------------------------------------------------------------
 		setpoint_roll = pid_roll_velocity.process(x_lin,setpoint_roll_velocity,time_duration);
@@ -102,7 +103,6 @@ void control_task(const tf::tfMessageConstPtr& tf_msg)
 	    msg.channel_1 = pid_roll.process(x_rot,setpoint_roll,time_duration);
 	    msg.channel_2 = pid_pitch.process(y_rot,setpoint_pitch,time_duration);
 	    msg.channel_3 = pid_yaw.process(z_rot,setpoint_yaw,time_duration);
-
 	    // Publish the msg to the RC-Controller
 	    chatter_pub.publish(msg);
 }
@@ -146,7 +146,7 @@ int main(int argc, char **argv)
   n.param("PID_MIN_VELOCITY",min_velocity,130.0);
   n.param("PID_INTEGRAL_FILTER_VELOCITY",integral_filter_velocity,5.0);
 
-
+  n.param("THROTTLE_HOVER",throttle_hover,100.0);
   // **********************ROTATION-PID-CONFIGURATION*************************
   // Setup roll
   pid_roll.set_P(p);

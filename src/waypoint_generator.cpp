@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "Waypoint_Generator");
+  ros::init(argc, argv, "waypoint_generator");
 
   ros::NodeHandle n;
 

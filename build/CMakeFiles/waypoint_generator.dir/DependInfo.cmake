@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/controller_server.cpp" "/home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles/controller_server.dir/src/controller_server.o"
+  "/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/waypoint_generator.cpp" "/home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles/waypoint_generator.dir/src/waypoint_generator.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

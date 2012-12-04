@@ -342,6 +342,19 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+#=============================================================================
+# Target rules for targets named waypoint_generator
+
+# Build rule for target.
+waypoint_generator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 waypoint_generator
+.PHONY : waypoint_generator
+
+# fast build rule for target.
+waypoint_generator/fast:
+	$(MAKE) -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/build
+.PHONY : waypoint_generator/fast
+
 # target to build an object file
 src/controller_core.o:
 	$(MAKE) -f CMakeFiles/controller_core.dir/build.make CMakeFiles/controller_core.dir/src/controller_core.o
@@ -356,6 +369,21 @@ src/controller_core.i:
 src/controller_core.s:
 	$(MAKE) -f CMakeFiles/controller_core.dir/build.make CMakeFiles/controller_core.dir/src/controller_core.s
 .PHONY : src/controller_core.s
+
+# target to build an object file
+src/controller_server.o:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.o
+.PHONY : src/controller_server.o
+
+# target to preprocess a source file
+src/controller_server.i:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.i
+.PHONY : src/controller_server.i
+
+# target to generate assembly for a file
+src/controller_server.s:
+	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/controller_server.s
+.PHONY : src/controller_server.s
 
 # target to build an object file
 src/pid.o:
@@ -374,17 +402,17 @@ src/pid.s:
 
 # target to build an object file
 src/waypoint_generator.o:
-	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/waypoint_generator.o
+	$(MAKE) -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/src/waypoint_generator.o
 .PHONY : src/waypoint_generator.o
 
 # target to preprocess a source file
 src/waypoint_generator.i:
-	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/waypoint_generator.i
+	$(MAKE) -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/src/waypoint_generator.i
 .PHONY : src/waypoint_generator.i
 
 # target to generate assembly for a file
 src/waypoint_generator.s:
-	$(MAKE) -f CMakeFiles/controller_server.dir/build.make CMakeFiles/controller_server.dir/src/waypoint_generator.s
+	$(MAKE) -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/src/waypoint_generator.s
 .PHONY : src/waypoint_generator.s
 
 # Help Target
@@ -414,9 +442,13 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... waypoint_generator"
 	@echo "... src/controller_core.o"
 	@echo "... src/controller_core.i"
 	@echo "... src/controller_core.s"
+	@echo "... src/controller_server.o"
+	@echo "... src/controller_server.i"
+	@echo "... src/controller_server.s"
 	@echo "... src/pid.o"
 	@echo "... src/pid.i"
 	@echo "... src/pid.s"

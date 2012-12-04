@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include "Controller_Core/channel_values.h"
+#include "Controller_Core2/channel_values.h"
 
 #include <sstream>
 // NOTE:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -11,14 +11,14 @@ int main(int argc, char **argv)
 
   ros::NodeHandle n;
 
-  ros::Publisher chatter_pub = n.advertise<Controller_Core::channel_values>("Channel_Information", 1000);
+  ros::Publisher chatter_pub = n.advertise<Controller_Core2::channel_values>("Channel_Information", 1000);
   // Frequency
   ros::Rate loop_rate(10);
   int count = 0;
   while (ros::ok())
   {
     // Create msg for the RC-Controller
-    Controller_Core::channel_values msg;
+    Controller_Core2::channel_values msg;
     msg.channel_1 = count;
     msg.channel_2 = count;
     msg.channel_3 = count;

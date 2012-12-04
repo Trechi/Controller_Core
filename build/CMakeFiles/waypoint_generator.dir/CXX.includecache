@@ -6,48 +6,34 @@
 
 #IncludeRegexTransform: 
 
-/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/controller_server.cpp
+../msg_gen/cpp/include/Controller_Core2/waypoint.h
 string
--
-iostream
--
-cstdio
--
-windows.h
--
-unistd.h
--
-serial/serial.h
-/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/serial/serial.h
-ros/ros.h
-/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/ros/ros.h
-Controller_Core/channel_values.h
-/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/Controller_Core/channel_values.h
-
-/home/johanv/code/vertensj-quadrotor/serial/include/serial/serial.h
-limits
 -
 vector
 -
-string
+map
 -
-cstring
+ostream
 -
-sstream
--
-exception
--
-stdexcept
--
-serial/v8stdint.h
--
+ros/serialization.h
+../msg_gen/cpp/include/Controller_Core2/ros/serialization.h
+ros/builtin_message_traits.h
+../msg_gen/cpp/include/Controller_Core2/ros/builtin_message_traits.h
+ros/message_operations.h
+../msg_gen/cpp/include/Controller_Core2/ros/message_operations.h
+ros/time.h
+../msg_gen/cpp/include/Controller_Core2/ros/time.h
+ros/macros.h
+../msg_gen/cpp/include/Controller_Core2/ros/macros.h
+ros/assert.h
+../msg_gen/cpp/include/Controller_Core2/ros/assert.h
 
-/home/johanv/code/vertensj-quadrotor/serial/include/serial/v8stdint.h
-stddef.h
--
-stdio.h
--
-stdint.h
+/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/waypoint_generator.cpp
+ros/ros.h
+/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/ros/ros.h
+Controller_Core2/waypoint.h
+/home/johanv/code/vertensj-quadrotor/Controller_Core2/src/Controller_Core2/waypoint.h
+sstream
 -
 
 /opt/ros/fuerte/include/XmlRpcDecl.h
@@ -245,6 +231,10 @@ boost/make_shared.hpp
 -
 
 /opt/ros/fuerte/include/ros/message_forward.h
+
+/opt/ros/fuerte/include/ros/message_operations.h
+ostream
+-
 
 /opt/ros/fuerte/include/ros/message_traits.h
 message_forward.h

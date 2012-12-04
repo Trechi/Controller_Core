@@ -655,6 +655,41 @@ clean: CMakeFiles/tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/waypoint_generator.dir
+
+# All Build rule for target.
+CMakeFiles/waypoint_generator.dir/all: CMakeFiles/rosbuild_precompile.dir/all
+	$(MAKE) -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/depend
+	$(MAKE) -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles  11
+	@echo "Built target waypoint_generator"
+.PHONY : CMakeFiles/waypoint_generator.dir/all
+
+# Include target in all.
+all: CMakeFiles/waypoint_generator.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/waypoint_generator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/waypoint_generator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johanv/code/vertensj-quadrotor/Controller_Core2/build/CMakeFiles 0
+.PHONY : CMakeFiles/waypoint_generator.dir/rule
+
+# Convenience name for target.
+waypoint_generator: CMakeFiles/waypoint_generator.dir/rule
+.PHONY : waypoint_generator
+
+# clean rule for target.
+CMakeFiles/waypoint_generator.dir/clean:
+	$(MAKE) -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/clean
+.PHONY : CMakeFiles/waypoint_generator.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/waypoint_generator.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

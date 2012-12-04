@@ -1,0 +1,39 @@
+<launch>
+	<node name="controller_server" pkg="Controller_Core2" type="controller_server" output="screen" />
+	<node name="cortex_stream" pkg="cortex_stream" type="cortex_stream" output="screen" />
+	
+	<node pkg="cortex_stream" type="posetracker" name="posetracker">
+     	<rosparam param="propfiles">["/home/johanv/code/alufr-ros-pkg/trunk/cortex_stream/src/quadrotor_test.prop"]</rosparam>
+    	<param name="scale" value="0.001" />
+    	<param name="sqrErrThreshold" value="0.05" />
+    	<param name="useRansac" value="True" />
+    	<param name="numRansacSamples" value="10" />
+	</node>
+
+	<node pkg="Controller_Core2" type="waypoint_generator" name="waypoint_generator" />
+
+	<node pkg="Controller_Core2" type="controller_core" name="controller_core">
+	<param name="THROTTLE_VALUE" value="" />
+
+	<!--Anglular pid -->
+	<param name="PID_P" value="0" />
+	<param name="PID_I" value="0" />
+	<param name="PID_D" value="0" />
+	<param name="PID_MAX" value="0" />
+	<param name="PID_MIN" value="0" />
+	
+	<!-- Position pid -->
+	<param name="PID_P_POSITION" value="0" />
+	<param name="PID_I_POSITION" value="0" />
+	<param name="PID_D_POSITION" value="0" />
+	<param name="PID_MAX_POSITION" value="0" />
+	<param name="PID_MIN_POSITION" value="0" />
+
+	<!-- Velocity pid -->
+	<param name="PID_P_VELOCITY" value="0" />
+	<param name="PID_I_VELOCITY" value="0" />
+	<param name="PID_D_VELOCITY" value="0" />
+	<param name="PID_MAX_VELOCITY" value="0" />
+	<param name="PID_MIN_VELOCITY" value="0" />
+	</node>
+</launch>
